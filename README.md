@@ -1,2 +1,3 @@
 # SZDataSource
-Easy to use DataSource for DiffableUITableViews in UIKit
+
+A description of this package.
