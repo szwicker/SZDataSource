@@ -6,6 +6,11 @@
 //
 
 public struct SZCellType {
-    public let cell: AnyClass?
-    public let identifier: String
+    let cell: AnyClass?
+    let identifier: String
+    
+    public init(cell: AnyClass?, identifier: String) {
+        self.cell = cell
+        self.identifier = identifier
+    }
 }
