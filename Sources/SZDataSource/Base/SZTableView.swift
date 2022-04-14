@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class SZTableView: UIView, SZLayoutProtocol {
+open class SZTableView: UIView, SZLayoutProtocol {
     // MARK: - Outlets
     let tableView: UITableView
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class SZTableViewCell: UITableViewCell, SZLayoutProtocol, SZCellProtocol {
+open class SZTableViewCell: UITableViewCell, SZLayoutProtocol, SZCellProtocol {
     // MARK: - Life-Cycle
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
