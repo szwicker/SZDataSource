@@ -23,8 +23,8 @@ open class SZTableViewCell: UITableViewCell, SZLayoutProtocol, SZCellProtocol {
     }
 
     // MARK: - Layout
-    public func layout(type: SZDataSourceType) {}
-    public func setupHierarchy() {}
-    public func setupViews() {}
-    public func setupConstraints() {}
+    open func layout(type: SZDataSourceType) {}
+    open func setupHierarchy() {}
+    open func setupViews() {}
+    open func setupConstraints() {}
 }

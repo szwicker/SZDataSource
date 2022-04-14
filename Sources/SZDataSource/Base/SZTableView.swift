@@ -41,13 +41,13 @@ open class SZTableView: UIView, SZLayoutProtocol {
     }
     
     // MARK: - Layout
-    public func setupHierarchy() {
+    open func setupHierarchy() {
         addSubview(autolayout: tableView)
     }
     
-    public func setupViews() {}
+    open func setupViews() {}
     
-    public func setupConstraints() {
+    open func setupConstraints() {
         let attributes: [NSLayoutConstraint.Attribute] = [.top, .bottom, .right, .left]
         NSLayoutConstraint.activate(attributes.map {
             NSLayoutConstraint(item: tableView, attribute: $0, relatedBy: .equal, toItem: self.superview, attribute: $0, multiplier: 1, constant: 0)
