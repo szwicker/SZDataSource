@@ -5,7 +5,7 @@
 //  Created by Simon Zwicker on 14.04.22.
 //
 
-protocol SZDataSourceType {
+public protocol SZDataSourceType {
     var cell: SZCellType { get }
     var data: Any? { get }
 }

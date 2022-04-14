@@ -5,11 +5,11 @@
 //  Created by Simon Zwicker on 14.04.22.
 //
 
-struct SZDataSourceGroup {
-    var name: String
-    var items: [SZDataSourceItem]
+public struct SZDataSourceGroup {
+    public var name: String
+    public var items: [SZDataSourceItem]
     
-    init(name: String = "", items: [SZDataSourceItem]) {
+    public init(name: String = "", items: [SZDataSourceItem]) {
         self.name = name
         self.items = items
     }

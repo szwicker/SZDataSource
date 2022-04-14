@@ -5,7 +5,7 @@
 //  Created by Simon Zwicker on 14.04.22.
 //
 
-protocol SZLayoutProtocol {
+public protocol SZLayoutProtocol {
     func setupLayout()
     func setupHierarchy()
     func setupViews()
@@ -13,7 +13,7 @@ protocol SZLayoutProtocol {
 }
 
 extension SZLayoutProtocol {
-    func setupLayout() {
+    public func setupLayout() {
         setupHierarchy()
         setupViews()
         setupConstraints()

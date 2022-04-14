@@ -5,7 +5,7 @@
 //  Created by Simon Zwicker on 14.04.22.
 //
 
-struct SZCellType {
-    let cell: AnyClass?
-    let identifier: String
+public struct SZCellType {
+    public let cell: AnyClass?
+    public let identifier: String
 }

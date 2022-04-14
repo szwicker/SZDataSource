@@ -7,24 +7,24 @@
 
 import UIKit
 
-class SZTableViewCell: UITableViewCell, SZLayoutProtocol, SZCellProtocol {
+public class SZTableViewCell: UITableViewCell, SZLayoutProtocol, SZCellProtocol {
     // MARK: - Life-Cycle
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupLayout()
     }
 
-    override func prepareForReuse() {
+    public override func prepareForReuse() {
         super.prepareForReuse()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: - Layout
-    func layout(type: SZDataSourceType) {}
-    func setupHierarchy() {}
-    func setupViews() {}
-    func setupConstraints() {}
+    public func layout(type: SZDataSourceType) {}
+    public func setupHierarchy() {}
+    public func setupViews() {}
+    public func setupConstraints() {}
 }

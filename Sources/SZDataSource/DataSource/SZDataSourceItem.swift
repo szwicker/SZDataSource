@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct SZDataSourceItem: Hashable {
-    var id: String
-    var type: SZDataSourceType
+public struct SZDataSourceItem: Hashable {
+    private var id: String
+    public var type: SZDataSourceType
     
-    init(type: SZDataSourceType) {
+    public init(type: SZDataSourceType) {
         self.id = UUID().uuidString
         self.type = type
     }
     
-    static func == (lhs: SZDataSourceItem, rhs: SZDataSourceItem) -> Bool {
+    public static func == (lhs: SZDataSourceItem, rhs: SZDataSourceItem) -> Bool {
         return lhs.id == rhs.id
     }
     
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
 }
